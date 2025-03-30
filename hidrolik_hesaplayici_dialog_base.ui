@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HidrolikHesaplayiciDialogBase</class>
+ <widget class="QDialog" name="HidrolikHesaplayiciDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1222</width>
+    <height>537</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Hidrolik Hesaplayici</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_8">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="inputDataGroupBox">
+     <property name="minimumSize">
+      <size>
+       <width>1051</width>
+       <height>449</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>İşlemler:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0" colspan="2">
+       <widget class="QGroupBox" name="cikti">
+        <property name="title">
+         <string>Çıktı:</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="1" column="0">
+          <widget class="QTextEdit" name="Tcikti"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="alanHesap">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="LboruBaslangic">
+           <property name="text">
+            <string>1. Boru Başlangıcı:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="CBdrenGen"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="CBboruSon"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="LDebiKatsayisi">
+           <property name="text">
+            <string>4. Debi Katsayısı:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="LdrenGenislig">
+           <property name="text">
+            <string>3. Dren Genişliği:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="LEdebiKatsayisi"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="CBboruBaslangic"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="LboruSon">
+           <property name="text">
+            <string>2. Boru Sonu:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="islemKatman">
+        <property name="title">
+         <string>İşlem Yapılacak Layer:</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QgsMapLayerComboBox" name="CBLayer"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="3" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>406</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Zemin Kot değeri Seçimi:</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="RBdem">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="LdemLayer">
+              <property name="text">
+               <string>5. DEM Layer:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QgsMapLayerComboBox" name="CBDemLayer"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QRadioButton" name="RBzemin">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="LzeminKBas">
+              <property name="text">
+               <string>6. Zemin Kot Başlangıç:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="CBzeminKotBas"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="LzeminKSon">
+              <property name="text">
+               <string>7. Zemin Kot Son:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="CBzeminKotSon"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QFormLayout" name="formLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="LboruKotBaslangic">
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="text">
+               <string>8. Boru Taban Kot Başlangıcı:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="CBboruKotBaslangic"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="LboruKotSon">
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="text">
+               <string>9. Boru Taban Kot Sonu:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="CBboruKotSon"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="Lcap">
+              <property name="text">
+               <string>10. Çap (mm):</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="CBcap"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="Lmanning">
+              <property name="text">
+               <string>11. Manning Katsayısı (n):</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="CBmanning"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="4" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>Hesaplama Seçenekleri:</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Uzunluk - Alan - Debi Hesabı:</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <weight>50</weight>
+                <italic>true</italic>
+                <bold>false</bold>
+                <underline>true</underline>
+                <strikeout>false</strikeout>
+                <stylestrategy>PreferDefault</stylestrategy>
+                <kerning>true</kerning>
+               </font>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <property name="text">
+               <string>1-2-3-4 numaralı sütunlar</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::AutoText</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="PBalanHesap">
+              <property name="text">
+               <string>Hesapla</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Boru Eğim - Hidrolik Hesaplamaları:</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <italic>true</italic>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>8-9-10-11 numaralı sütunlar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="PBortaBolumHesap">
+              <property name="text">
+               <string>Hesapla</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Kazı Hacmi Hesaplamaları:</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="PBkaziHacmiHesap">
+              <property name="text">
+               <string>Hesapla</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <italic>true</italic>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>8-9-10-(5 ya da 6-7) numaralı sütunlar</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Tümünün Hesaplaması:</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="PBtumunuHesapla">
+              <property name="text">
+               <string>Hesapla</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+                <italic>true</italic>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Tümı sütunlar</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapLayerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsmaplayercombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
